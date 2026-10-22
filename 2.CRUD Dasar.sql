@@ -1,3 +1,4 @@
+--create--
 INSERT INTO nasabah (nama_nasabah, alamat, no_telepon) VALUES
 ('Bara', 'Kraksaan', '081234567801'),
 ('Faria', 'Malang', '081234567802'),
@@ -16,15 +17,15 @@ VALUES
 (2, 2, 3.00, 6000, 18000, '2026-10-21'),
 (3, 3, 4.00, 2500, 10000, '2026-10-22');SELECT * FROM setoran WHERE 1
 
-  
+--read--
 SELECT * FROM jenis_sampah;
 
-
+--update--
 UPDATE jenis_sampah
 SET nama_jenis = 'Plastik Bersih'
 WHERE id_sampah = 1;
 
 
-
+--delete--
 DELETE FROM setoran
 WHERE id_setoran = 3;
